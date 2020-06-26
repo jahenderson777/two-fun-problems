@@ -1,0 +1,12 @@
+{:deps
+ {;quil {:mvn/version "3.1.0"}
+  }
+ 
+ :paths ["src"]
+ 
+ :aliases {:uberjar
+           {:extra-deps
+            {luchiniatwork/cambada
+             {:mvn/version "1.0.2"}}
+            :main-opts ["-m" "cambada.uberjar"
+                        "-m" "intenda.core"]}}}
